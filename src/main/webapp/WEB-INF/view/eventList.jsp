@@ -65,7 +65,7 @@
             	}else if(state=="REJECTED"){
             		alert("유효하지 않은 쿠폰/이벤트 정보입니다. - 오류 ");
             	}else if(state=="APPROVED"){
-            		alert("쿠폰이 발급되었습니다. 쿠폰번호: "+barcodeNum);
+            		alert("쿠폰이 발급되었습니다. 바코드번호 : "+barcodeNum);
             	}
             },
             error : function(){
