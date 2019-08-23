@@ -106,7 +106,6 @@
             dataType : "json",
             success : function(data){
                 console.log(data.length);
-                console.log(data[1].eventId);
                 var html = ""; 
                 for(var i=0; i<data.length; i++){
                
