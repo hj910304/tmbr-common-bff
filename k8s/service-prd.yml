@@ -1,0 +1,17 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: tmbr-common-bff
+  labels:
+    app: tmbr-common-bff
+spec:
+  ports:
+  - name: http #ddkanrjsk 아무거나 
+    port: 80 #80으로 편함  
+    targetPort: 6060
+    nodePort: 31580
+  selector:
+    app: tmbr-common-bff
+    version: '0.1'
+  type: NodePort
+#NodePort

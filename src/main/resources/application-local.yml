@@ -1,0 +1,3 @@
+tmbr-customer-api: localhost:7070
+tmbr-event-api: localhost:8080
+tmbr-event-master-api: localhost:9090

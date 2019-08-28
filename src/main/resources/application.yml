@@ -1,0 +1,11 @@
+server:
+  port: 6060
+
+spring:
+  mvc:
+    view:
+      prefix: /WEB-INF/view/
+      suffix: .jsp
+    static-path-pattern: /resources/**
+  profiles:
+    active: local

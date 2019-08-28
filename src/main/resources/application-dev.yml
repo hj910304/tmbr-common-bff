@@ -1,0 +1,3 @@
+tmbr-customer-api: 61.250.19.58:31581
+tmbr-event-api: tmbr-event-api:8080
+tmbr-event-master-api: tmbr-event-master-api:9090

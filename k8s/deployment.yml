@@ -1,0 +1,35 @@
+apiVersion: apps/v1beta2
+kind: Deployment
+metadata:
+  name: tmbr-common-bff
+  labels:
+    app: tmbr-common-bff
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: tmbr-common-bff
+      version: '0.1'
+  template:
+    metadata:
+      labels:
+        app: tmbr-common-bff
+        version: '0.1'
+    spec:
+      containers:
+      - name: tmbr-common-bff
+        env:
+        - name: SPRING_PROFILES_ACTIVE
+          value: dev
+        image: twdd.icp.skt.com:8500/msa-training/tmbr-common-bff:0.0.1
+        ports:
+        - containerPort: 6060
+        imagePullPolicy: Always
+        resources:
+          requests:
+            cpu: 1000m
+            memory: 2048Mi
+          limits:
+            cpu: 2000m
+            memory: 2048Mi
+
